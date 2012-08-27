@@ -22,5 +22,5 @@ and start the app
 <code>./rel/todolist/bin/todolist start</code>
 
 #Missing
-More tests and documentation would be good :)
-Input form validation for the ones that want to create void :)
+<p>More tests and documentation would be good</p>
+<p>Input form validation for the ones that want to create void! </p>
