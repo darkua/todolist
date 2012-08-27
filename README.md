@@ -3,9 +3,13 @@ Multi-user todolist app using Cowboy + Knockout.js
 
 #Install & Test
 ```git clone git@github.com:darkua/todolist.git
+
 cd todolist
+
 rebar get-deps
+
 rebar compile
+
 rebar compile eunit doc skip_deps=true```
 
 With this you will compile the app, generate the doc, and run the tests.
