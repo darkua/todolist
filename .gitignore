@@ -3,5 +3,6 @@ deps/cowboy/
 deps/jsx/
 rel/todolist/
 *.beam
+*.app
 .DS_Store
 .DS_Store?
