@@ -1,5 +1,5 @@
 # TodoList
-Multi-user todolist app using Cowboy + Knockout.js
+Multi-user todolist app using Cowboy + Knockout.js with websocket communication!
 
 #Install & Test
 <p><code>git clone git@github.com:darkua/todolist.git</code></p>
@@ -22,4 +22,4 @@ and start the app
 <code>./rel/todolist/bin/todolist start</code>
 
 #Missing
-More tests and extension documentation would be good :)
+More tests and documentation would be good :)
