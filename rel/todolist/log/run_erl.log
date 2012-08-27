@@ -1,8 +1,0 @@
-run_erl [13798] Mon Aug 27 03:52:37 2012
-Args before exec of shell:
-run_erl [13798] Mon Aug 27 03:52:37 2012
-argv[0] = sh
-run_erl [13798] Mon Aug 27 03:52:37 2012
-argv[1] = -c
-run_erl [13798] Mon Aug 27 03:52:37 2012
-argv[2] = exec /Users/sergioveiga/todolist/rel/todolist/bin/todolist console 
