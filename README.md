@@ -23,3 +23,4 @@ and start the app
 
 #Missing
 More tests and documentation would be good :)
+And input form validation for the ones that want to create void :)
