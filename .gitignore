@@ -1,0 +1,7 @@
+apps/todolist/doc
+deps/cowboy/
+deps/jsx/
+rel/todolist/
+*.beam
+.DS_Store
+.DS_Store?
