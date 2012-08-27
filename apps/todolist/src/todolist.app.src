@@ -1,0 +1,13 @@
+{application, todolist,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  cowboy
+                 ]},
+  {mod, { todolist_app, []}},
+  {env, []}
+ ]}.
