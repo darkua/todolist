@@ -123,24 +123,24 @@ start_link() ->
 init([]) ->
     Dispatch = [
   		{'_', [
-  		    {[],                        cowboy_http_static, [
-  		                                                      {directory, {priv_dir, todolist, [<<"html">>]}},
-  		                                                      {file, <<"index.html">>},
-  		                                                      {mimetypes, [{<<".html">>, [<<"text/html">>]}]}
-  		                                                    ]}
-        , {[<<"static">>, '...'],     cowboy_http_static, [
-                                                              {directory, {priv_dir, todolist, []} }
-                                                            , {mimetypes, [
-                                                                  {<<".css">>, [<<"text/css">>]},
-                                                                  {<<".js">>, [<<"application/javascript">>]}
-                                                              ]}
-                                                          ]}
-        , {[<<"stream">>],            todolist_websocket, []}
-  			, {'_', default_handler, []}
+  		        {[],cowboy_http_static, [
+  		          {directory, {priv_dir, todolist, [<<"html">>]}},
+  		          {file, <<"index.html">>},
+  		          {mimetypes, [{<<".html">>, [<<"text/html">>]}]}
+  		        ]},
+              {[<<"static">>, '...'], cowboy_http_static, [
+                {directory, {priv_dir, todolist, []} },
+                {mimetypes, [
+                  {<<".css">>, [<<"text/css">>]},
+                  {<<".js">>, [<<"application/javascript">>]}]
+                }
+              ]},
+              {[<<"stream">>],todolist_websocket, []},
+              {'_', default_handler, []}
   		]}
   	],
   	cowboy:start_listener(my_http_listener, 100,
-  		cowboy_tcp_transport, [{port, 8080}],
+  		cowboy_tcp_transport, [{port, ?WS_PORT}],
   		cowboy_http_protocol, [{dispatch, Dispatch}]
   	),
     {ok, #state{todolists=[]}}.
