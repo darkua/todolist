@@ -23,6 +23,5 @@ To deploy the app just run
 and start the app
 <code>./rel/todolist/bin/todolist start</code>
 
-#Missing
-<p>More tests and documentation would be good</p>
-<p>Input form validation for the ones that want to create void! </p>
+#Demo	
+<p>A dummy demo <a href="http://todolist.sergioveiga.com:8082">here</a></p>
